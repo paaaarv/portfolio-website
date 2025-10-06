@@ -1,0 +1,120 @@
+/* import fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* global styles */ 
+/*CHANGE COLORS THEYRE TERRIBLE*/ 
+:root{
+    --cream: #F6F1E3; 
+    --mustard: #D9910D; 
+    --terra: #C35645; 
+    --olive: #a2ac88; 
+    --brown: #8B4513; 
+    --blush: #F3C6B5; 
+    --teal: #1e6d6d; 
+}
+
+
+body{
+     background-color: var(--cream); 
+     font-family: "Open Sans", sans-serif;
+}
+h1, h2 {
+    font-family: "Caprasimo", serif; 
+}
+h1{
+    font-size: 2rem; 
+}
+h2{
+    font-size: 1.5rem; 
+}
+h3{
+    font-size: 1.2rem; 
+}
+header, footer{
+    display: flex; 
+    padding: 20px; 
+}
+#logo{
+    width: 30%; 
+}
+#logo img{
+    width: inherit;
+}
+nav{
+    width: 70%; 
+    align-content: center;
+}
+#nav{
+    display: flex; 
+    justify-content: space-evenly; 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#contact{
+    width: 80%; 
+    margin: auto; 
+
+}
+
+footer{
+    display: flex; 
+    padding: 10px; 
+
+
+}
