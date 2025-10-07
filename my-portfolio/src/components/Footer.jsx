@@ -2,7 +2,7 @@ import Logo from '../../public/PK-logo.png'
 
 export default function Footer(){
     return (
-        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
+        <footer className="footer sm:footer-horizontal items-center p-4">
         <div className="grid-flow-row">
             <img className="logo-img" src={Logo} alt="Parvathi Kumar logo"/>
         </div>

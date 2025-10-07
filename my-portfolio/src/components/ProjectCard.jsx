@@ -1,23 +1,17 @@
+import sagaV from '../../public/sagaV.png'
 
 export default function ProjectCard(){
     return(
-        <div className="card w-96 bg-base-300 card-lg shadow-sm">
+        <div className="card card-sm py-1 mx-2 w-96 shadow-sm">
             <figure>
                 <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes" />
+                src= {sagaV} 
+                alt="SagaV Home Page"
+                />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title"> Saga V - A Mocktail Brand </h2>
-                <div id="tags-container">
-                    <div className="mx-1 badge badge-primary outline">HTML/CSS</div>
-                    <div className="mx-1 badge badge-secondary outline">jQuery</div>
-                    <div className="mx-1 badge badge-tertiary outline">Github</div>
-                </div>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div className="my-2 card-actions justify-end">
-                    <button className="btn btn-primary">See More</button>
-                </div>
+            <div className="project-card-info card-body">
+                <h2 className="inline-flex card-title">Saga V</h2>
+                <button className="btn btn-primary w-25">See More</button>
             </div>
         </div>
     )

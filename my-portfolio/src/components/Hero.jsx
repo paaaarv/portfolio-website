@@ -2,9 +2,9 @@ import Headshot from '../../public/headshot.jpg'
 import ProjectCard from './ProjectCard'
 export default function Hero(){
     return(
-        <div className="hero bg-base-200 min-h-screen">
-            <div className="hero-content flex-col md:flex-row flex-wrap">
-                <div className="md:w-1/3">
+        <div className="hero min-h-screen">
+            <div className="hero-content justify-evenly flex-col md:flex-row flex-wrap">
+                <div className="md:w-1/3 text-left">
                     <h1 className="text-5xl font-bold">Parvathi Kumar</h1>
                     <p className="py-3">
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
@@ -15,7 +15,7 @@ export default function Hero(){
                 src={Headshot} 
                 className="max-w-xs headshot-img shadow-2xl"
                 />
-                 <div className=" mt-3 join join-vertical lg:join-horizontal justify-center">
+                 <div className="mt-2 justify-between join join-vertical lg:join-horizontal justify-center">
                     <ProjectCard/>
                     <ProjectCard/>
                     <ProjectCard/>
