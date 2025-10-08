@@ -7,8 +7,8 @@ export default function Hero(){
                 <div className="md:w-1/3 text-left">
                     <h1 className="text-5xl font-bold">Parvathi Kumar</h1>
                     <p className="py-3">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        Creating intuitive, scalable web experiences and turning complex ideas into elegant, user-friendly solutions. I thrive on bringing creative ideas to life through thoughtful code and collaboration. <br/> <br/>
+                        Let's build something remarkable together.
                     </p>
                 </div>
                 <img

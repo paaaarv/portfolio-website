@@ -18,7 +18,7 @@
     line-height: 1.5;
     font-weight: 400;
     background-color: #f6f1e3;
-    color: var(--mustard); 
+    color: var(--teal); 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -27,11 +27,11 @@
 
 a {
   font-weight: 500;
-  color: var(--teal); 
+  color: var(--terra); 
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--brown); 
+  color: var(--mustard); 
 }
 
 .logo-img{
@@ -53,6 +53,7 @@ h1 {
   font-size: 3em;
   line-height: 1.5;
   font-family: "Caprasimo",serif; 
+  color: var(--mustard); 
 }
 
 h2{
@@ -84,6 +85,14 @@ button:focus-visible {
   justify-content: space-between;
   flex-direction: row; 
   align-items: center;
+}
+
+#bio-container{
+  width: 100%; 
+  margin: auto;
+  text-align: justify;
+  padding: 100px 250px;
+  background-color: var(--olive); 
 }
 @media (prefers-color-scheme: light) {
   :root {
