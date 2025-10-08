@@ -16,13 +16,13 @@ export default function Navbar() {
       initial={{ y: -60, opacity: 0 }}
       animate={{ y:  0, opacity: 1}}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      style={{ position: 'fixed', top: 0, width: '100%' }}
+      style={{ width: '100%', padding: '1em'}}
     >
     <div className="navbar justify-between">
         <div className="flex-none">
-            <a href="/">
+            <Link to="/">
                 <img className="logo-img" src={Logo} alt="Parvathi Kumar logo"></img>
-            </a>
+            </Link>
         </div>
         <div className="flex-one justify-between">
             <ul className="menu uppercase menu-horizontal px-1">

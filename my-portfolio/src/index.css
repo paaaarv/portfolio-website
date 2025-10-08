@@ -98,6 +98,10 @@ button:focus-visible {
 #resume-container{
   width: 100%;
 }
+
+#resume li {
+  font-size: .9em; 
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

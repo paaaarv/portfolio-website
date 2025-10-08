@@ -1,12 +1,12 @@
 import Resume from '../components/Resume'; 
-
+import AboutImg from '../../public/About-2.jpeg'
 export default function About(){
     return(
         <div id="about">
             <div className="text-left">
                 <div className="hero-content flex-col lg:flex-row px-35">
                     <img
-                    src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                    src={AboutImg}
                     className="max-w-sm rounded-lg shadow-2xl"
                     />
                     <div>

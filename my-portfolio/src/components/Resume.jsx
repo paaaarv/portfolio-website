@@ -32,7 +32,7 @@ export default function Resume() {
   }
 
   return (
-    <section className="container mx-auto p-6">
+    <section id="resume" className="container mx-auto p-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Column: Skills (top) and Education (bottom) */}
         <div className="flex flex-col gap-8 md:col-span-1">
