@@ -94,6 +94,10 @@ button:focus-visible {
   padding: 100px 250px;
   background-color: var(--olive); 
 }
+
+#resume-container{
+  width: 100%;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

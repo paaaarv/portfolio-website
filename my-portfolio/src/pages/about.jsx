@@ -31,9 +31,7 @@ export default function About(){
                 </p>
             </div>
             <div className="divider"> <h2> My Experience </h2> </div>
-            <div id="resume-container">
-                <Resume/> 
-            </div>
+            <Resume/> 
         </div>
     )
 }
