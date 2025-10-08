@@ -1,4 +1,4 @@
-
+import Resume from '../components/Resume'; 
 
 export default function About(){
     return(
@@ -30,8 +30,9 @@ export default function About(){
                 through the puzzles I love in my spare time, the crossword, sudoku, etc. 
                 </p>
             </div>
+            <div className="divider"> <h2> My Experience </h2> </div>
             <div id="resume-container">
-
+                <Resume/> 
             </div>
         </div>
     )
