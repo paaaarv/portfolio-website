@@ -1,24 +1,24 @@
 import './App.css'
-import { motion } from "motion/react"
+import { motion } from "framer-motion"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Hero from './components/Hero'
-import About from './pages/about'
+import Home from './pages/home'
+import About from './pages/about'; 
+import Projects from './pages/projects'; 
+
 function App() {
 
   return (
-    <>
-      <Navbar/>
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-      >
-        <Hero/>
-      </motion.div>
-      <About/> 
-      <Footer/> 
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Projects />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 
