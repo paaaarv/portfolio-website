@@ -16,21 +16,20 @@ export default function About(){
             </div>
             <div id="bio-container">
                 <p className="py-6">
-                My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of working 
-                through the puzzles I love in my spare time, the crossword, sudoku, etc. My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of working 
-                through the puzzles I love in my spare time, the crossword, sudoku, etc. </p>
-                <p>
-                    My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of working 
-                through the puzzles I love in my spare time, the crossword, sudoku, etc. My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of working 
-                through the puzzles I love in my spare time, the crossword, sudoku, etc. 
+                    My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of  
+                    the puzzles I love cracking in my spare time,  The NYT Crossword, Sudoku, Connections, Wordle etc. 
                 </p>
-                 <p>
-                    My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of working 
-                through the puzzles I love in my spare time, the crossword, sudoku, etc. My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of working 
-                through the puzzles I love in my spare time, the crossword, sudoku, etc. 
+                <p className="py-6">
+                    What makes my work special is not just my proficiency with React or Java, 
+                    but also a genuine desire to solve problems that matter. I believe technology should serve people first, which drives me to pay close attention to user experience and collaboration. 
+                    I've always enjoyed connecting with others, sharing ideas, and building solutions that make a difference.
+                </p>
+                <p className="py-6">
+                    Throughout my years of hands-on experience, I've moved between modernizing legacy systems and crafting sleek, scalable applications, always with an eye on clarity and function. 
+                    For me, development isn't just a job. It's a continuous journey of growth, creativity, and meaningful impact.
                 </p>
             </div>
-            <div className="divider"> <h2> My Experience </h2> </div>
+            <div className="py-6"> <h2> My Experience </h2> </div>
             <Resume/> 
         </div>
     )

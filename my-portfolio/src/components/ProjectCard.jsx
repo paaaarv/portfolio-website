@@ -11,7 +11,7 @@ export default function ProjectCard(){
             </figure>
             <div className="project-card-info card-body">
                 <h2 className="inline-flex card-title">Saga V</h2>
-                <button className="btn btn-primary w-25">See More</button>
+                <a href="https://dev.to/paaaarv/envisioning-sagav-a-tarot-themed-mocktail-brand-1dkp" target="_blank"><button className="btn btn-primary w-25">See More</button></a>
             </div>
         </div>
     )
