@@ -1,5 +1,5 @@
 import Resume from '../components/Resume'; 
-import AboutImg from '../../public/About-2.jpeg'
+import AboutImg from '/About-2.jpeg'
 export default function About(){
     return(
         <div id="about">

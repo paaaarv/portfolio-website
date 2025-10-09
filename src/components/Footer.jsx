@@ -1,4 +1,4 @@
-import Logo from '../../public/PK-logo.png'
+import Logo from '/PK-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 

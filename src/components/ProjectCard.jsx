@@ -1,4 +1,4 @@
-import sagaV from '../../public/sagaV.png'
+import sagaV from '/sagaV.png'
 
 export default function ProjectCard(){
     return(

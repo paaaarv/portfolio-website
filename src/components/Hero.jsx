@@ -1,4 +1,4 @@
-import Headshot from '../../public/headshot.jpg'
+import Headshot from '/headshot.jpg'
 import ProjectCard from './ProjectCard'
 export default function Hero(){
     return(
