@@ -1,6 +1,5 @@
 import Resume from '../components/Resume'; 
 import AboutImg from '/About.jpg'
-import { fetchBooks } from '../api/hardcover';
 import BookList from '../components/BookList';
 export default function About(){
     return(
@@ -18,7 +17,7 @@ export default function About(){
                 </div>
             </div>
             <BookList/> 
-            
+
             <div id="bio-container">
                 <p className="py-6">
                     My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of  

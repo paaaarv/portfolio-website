@@ -1,7 +1,20 @@
 import sagaV from '/sagaV.png'
-import { fetchBooks } from '../api/hardcover'
+import { fetchArticles } from '../api/blog'
+import { useState, useEffect } from 'react';
+
 
 export default function ProjectCard(){
+
+   const [projects, setProjects] = useState([]);
+   
+     useEffect(() => {
+       fetchArticles().then(data => {
+         setProjects(data || []);
+         console.log(data);
+       }).catch(console.error);
+   
+     }, []);
+   
     return(
         <div className="card card-sm py-1 mx-2 w-96 shadow-sm">
             <figure>
@@ -12,7 +25,7 @@ export default function ProjectCard(){
             </figure>
             <div className="project-card-info card-body">
                 <h2 className="inline-flex card-title">Saga V</h2>
-                <a aria-label="Click to read more about SagaV"> href="https://dev.to/paaaarv/envisioning-sagav-a-tarot-themed-mocktail-brand-1dkp" target="_blank"<button className="btn btn-primary w-25">See More</button></a>
+                <a aria-label="Click to read more about SagaV" href="https://dev.to/paaaarv/envisioning-sagav-a-tarot-themed-mocktail-brand-1dkp" target="_blank"><button className="btn btn-primary w-25">See More</button></a>
             </div>
         </div>
     )

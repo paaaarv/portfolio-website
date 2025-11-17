@@ -17,7 +17,7 @@ const BookList = () => {
       {books.map((userBook, index) => {
         const book = userBook.book;
         return (
-          <div key={index} id={index} className="carousel-item relative w-full" >
+          <div key={index} id={index} className="carousel-item relative w-fullg" >
             <div className="mx-2 my-4 text-[var(--cream)]">
               <img className=" my-2 mx-auto h-[400px] rounded-box" src={book.image.url} alt={book.title} />
               <div className="text-lg font-bold  opacity-100">{book.title}</div>
