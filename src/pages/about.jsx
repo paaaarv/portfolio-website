@@ -1,5 +1,5 @@
 import Resume from '../components/Resume'; 
-import AboutImg from '/About-2.jpeg'
+import AboutImg from '/About.jpg'
 export default function About(){
     return(
         <div id="about">
@@ -8,6 +8,7 @@ export default function About(){
                     <img
                     src={AboutImg}
                     className="max-w-sm rounded-lg shadow-2xl"
+                    alt="A picture of Parvathi sitting on the beach in Chicago with the skyline in the background"
                     />
                     <div>
                     <h2 className="text-5xl font-bold">About Parvathi</h2>

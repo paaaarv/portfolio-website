@@ -31,16 +31,10 @@ export default function Footer(){
             <img className="logo-img mx-2" src={Logo} alt="Parvathi Kumar logo"/>
             <p> Coded with React, DaisyUI, and TailwindCSS</p>
         </div>
-        <nav>
-             <div className="grid grid-flow-col gap-4">
-            <a className="link link-hover">About</a>
-            <a className="link link-hover">Work</a>
-            </div>
-        </nav>
         <div className="grid grid-flow-col gap-4"> 
             <a onClick={handleCopyClick} className="tooltip" data-tip={copied ? "Copied!" : "parvathi.n.kumar@gmail.com"}> <FontAwesomeIcon icon="fa-regular fa-envelope"/> </a>
-            <a href="https://www.linkedin.com/in/parvathi-kumar" target="_blank"><FontAwesomeIcon icon="fa-brands fa-linkedin" /> </a>
-            <a href="https://www.github.com/paaaarv" target="_blank"><FontAwesomeIcon icon="fa-brands fa-github" /></a>    
+            <a aria-label="Parvathi's LinkedIn Profile" href="https://www.linkedin.com/in/parvathi-kumar" target="_blank"><FontAwesomeIcon icon="fa-brands fa-linkedin" /> </a>
+            <a aria-label="Parvathi's Github Profile" href="https://www.github.com/paaaarv" target="_blank"><FontAwesomeIcon icon="fa-brands fa-github" /></a>    
         </div>
     </footer>
     )

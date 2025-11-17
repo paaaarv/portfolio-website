@@ -28,7 +28,6 @@ export default function Navbar() {
             <ul className="menu uppercase menu-horizontal px-1">
             <li><Link to="/" className="link link-hover">Home</Link></li>
             <li><Link to="/about" className="link link-hover">About</Link></li>
-            <li><Link to="/work" className="link link-hover">Work</Link> </li> 
             </ul>
         </div>
     </div>
