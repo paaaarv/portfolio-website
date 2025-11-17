@@ -17,6 +17,8 @@ export default function About(){
                     </div>
                 </div>
             </div>
+            <BookList/> 
+            
             <div id="bio-container">
                 <p className="py-6">
                     My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of  
@@ -32,9 +34,6 @@ export default function About(){
                     For me, development isn't just a job. It's a continuous journey of growth, creativity, and meaningful impact.
                 </p>
             </div>
-            <div className="py-6"> <h2> My Experience </h2> </div>
-            <Resume/> 
-            <BookList/> 
         </div>
     )
 }

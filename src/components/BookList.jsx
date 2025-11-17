@@ -12,25 +12,22 @@ const BookList = () => {
   }, []);
 
   return (
-    <ul className="list bg-base-100 rounded-box shadow-md">
-  
-    <li className="p-4 pb-2 text-xl uppercase tracking-wide">Recently Read</li>
-  
+    <div className="bg-[var(--brown)] w-80 rounded-box">
+   <div className="carousel rounded-box w-64">
       {books.map((userBook, index) => {
         const book = userBook.book;
         return (
-          <li key={index} className="list-row">
-            <div>
-              <img className="size-30 rounded-box" src={book.image.url} alt={book.title} />
+          <div key={index} id={index} className="carousel-item relative w-full" >
+            <div className="mx-2 my-4 text-[var(--cream)]">
+              <img className=" my-2 mx-auto h-[400px] rounded-box" src={book.image.url} alt={book.title} />
+              <div className="text-lg font-bold  opacity-100">{book.title}</div>
+              <div className="text-sm font-thin">{book.contributions[0].author.name}</div>
             </div>
-            <div>
-              <div className="text-lg font-bold opacity-100">{book.title}</div>
-              <div className="text-sm uppercase font-semibold opacity-60">{book.contributions[0].author.name}</div>
-            </div>
-          </li>
+          </div>
         );
       })}
-    </ul>
+    </div>
+    </div>
   );
 };
 
