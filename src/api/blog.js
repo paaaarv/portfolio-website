@@ -1,8 +1,6 @@
 
 export const fetchArticles = async () => {
-    fetch("api/devto-articles").then((res) => {
-    let response = res.json();
-    return response; 
-});
- 
+  const res = await fetch("api/devto-articles");
+  const response = await res.json();
+  return response;
 }

@@ -8,6 +8,7 @@ const PORT = 3000;
 
 // Load API key from environment
 dotenv.config();
+// eslint-disable-next-line no-undef
 const apiKey = process.env.BLOG_API_KEY;
 console.log('Loaded API Key:', apiKey);
 

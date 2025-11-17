@@ -10,24 +10,46 @@ export default function ProjectCard(){
      useEffect(() => {
        fetchArticles().then(data => {
          setProjects(data || []);
-         console.log(data);
        }).catch(console.error);
    
      }, []);
+
+     const createProjectModal = (e) => {
+        console.log(e); 
+        return(
+             `<div id="my_modal_2" className="modal">
+                            <div className="modal-box">
+                                <h3 className="font-bold text-lg">Hello!</h3>
+                                <p className="py-4">Press ESC key or click outside to close</p>
+                            </div>
+                            <form method="dialog" className="modal-backdrop">
+                                <button>close</button>
+                            </form>
+                        </div>`
+        )
+     }
    
     return(
-        <div className="card card-sm py-1 mx-2 w-96 shadow-sm">
-            <figure>
-                <img
-                src= {sagaV} 
-                alt="SagaV Home Page"
-                />
-            </figure>
-            <div className="project-card-info card-body">
-                <h2 className="inline-flex card-title">Saga V</h2>
-                <a aria-label="Click to read more about SagaV" href="https://dev.to/paaaarv/envisioning-sagav-a-tarot-themed-mocktail-brand-1dkp" target="_blank"><button className="btn btn-primary w-25">See More</button></a>
+        <div>
+            {projects.map((project) => {
+            return (
+            <div className="card card-sm py-1 mx-2 w-96 shadow-sm">
+                <figure>
+                    <img
+                    className="h-full w-auto"
+                    src={project.cover_image} 
+                    alt={project.title}
+                    />
+                </figure>
+                <div className="project-card-info card-body">
+                    <h2 className="inline-flex card-title">{project.title} </h2>
+                    <button className="btn" onClick={(e) => createProjectModal(e)}>open modal</button>
+                       
+                </div>
             </div>
-        </div>
+            );
+        })}
+      </div>
     )
 }
 
