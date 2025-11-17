@@ -1,4 +1,5 @@
 import sagaV from '/sagaV.png'
+import { fetchBooks } from '../api/hardcover'
 
 export default function ProjectCard(){
     return(

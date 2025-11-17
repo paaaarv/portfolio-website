@@ -1,5 +1,7 @@
 import Resume from '../components/Resume'; 
 import AboutImg from '/About.jpg'
+import { fetchBooks } from '../api/hardcover';
+import BookList from '../components/BookList';
 export default function About(){
     return(
         <div id="about">
@@ -32,6 +34,7 @@ export default function About(){
             </div>
             <div className="py-6"> <h2> My Experience </h2> </div>
             <Resume/> 
+            <BookList/> 
         </div>
     )
 }
