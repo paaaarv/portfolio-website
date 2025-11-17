@@ -12,6 +12,9 @@ export const fetchBooks = async () => {
             name
           }
         }
+        image {
+          url
+        }
       }
     }
   }
@@ -24,8 +27,7 @@ export const fetchBooks = async () => {
       "Authorization": `Bearer ${HARDCOVER_API_KEY}`
     },
     body: JSON.stringify({ query }),
-  });
-  let response = res.json(); 
-  console.log(response);
+  }).then(data =>  data.json());
+  let response = res.data.me[0]; 
   return response;
 };
