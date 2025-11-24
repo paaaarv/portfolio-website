@@ -3,7 +3,7 @@ const HARDCOVER_API_KEY = import.meta.env.VITE_HARDCOVER_API_KEY;
 export const fetchBooks = async () => {
   const query = `{
     me {
-    user_books(order_by: {date_added: desc}, limit: 5, where: {status_id: {_eq: 3}}) {
+    user_books(order_by: {date_added: desc}, limit: 3, where: {status_id: {_eq: 3}}) {
       id
       book {
         title
