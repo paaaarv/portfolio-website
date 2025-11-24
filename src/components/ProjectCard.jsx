@@ -2,7 +2,6 @@ import sagaV from '/sagaV.png'
 import { fetchArticles } from '../api/blog'
 import { useState, useEffect } from 'react';
 
-
 export default function ProjectCard(){
 
    const [projects, setProjects] = useState([]);
@@ -33,7 +32,7 @@ export default function ProjectCard(){
         <div>
             {projects.map((project) => {
             return (
-            <div className="card card-sm py-1 mx-2 w-96 shadow-sm">
+            <div className="card card-sm py-1 mx-3 w-64 shadow-sm">
                 <figure>
                     <img
                     className="h-full w-auto"
@@ -42,10 +41,11 @@ export default function ProjectCard(){
                     />
                 </figure>
                 <div className="project-card-info card-body">
-                    <h2 className="inline-flex card-title">{project.title} </h2>
-                    <button className="btn" onClick={(e) => createProjectModal(e)}>open modal</button>
-                       
+                    <h4 className="inline-flex card-title">{project.title} </h4>    
                 </div>
+                <button className="w-25 self-end btn" onClick={(e) => createProjectModal(e)}>
+                    <img src="../assets/arrow-circle-right.svg"/> 
+                </button>
             </div>
             );
         })}

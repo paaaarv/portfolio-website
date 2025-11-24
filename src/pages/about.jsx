@@ -5,18 +5,19 @@ export default function About(){
     return(
         <div id="about">
             <div className="text-left">
-                <div className="hero-content flex-col lg:flex-row px-35">
+                <div className="hero-content flex-col md:flex-row px-35">
                     <img
                     src={AboutImg}
-                    className="max-w-sm rounded-lg shadow-2xl"
+                    className="sm: w-full md:w-1/2 rounded-lg shadow-2xl"
                     alt="A picture of Parvathi sitting on the beach in Chicago with the skyline in the background"
                     />
-                    <div>
-                    <h2 className="text-5xl font-bold">About Parvathi</h2>
+                     <div>
+                        <h2 className="text-2xl my-[-10px] font-bold">About Parvathi</h2>
+                        <h4 className="text-md my-0 ml-20 lowercase"> (par&middot;vuh&middot;thee)</h4>
+                     <BookList/> 
                     </div>
                 </div>
             </div>
-            <BookList/> 
 
             <div id="bio-container">
                 <p className="py-6">

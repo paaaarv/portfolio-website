@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.77 162.31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d4b7b2;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #542e27;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #542e27;
+        font-family: ProximaNovaT-Thin, 'Proxima Nova';
+        font-size: 78.13px;
+        font-weight: 200;
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <ellipse class="cls-1" cx="83.39" cy="81.16" rx="81.39" ry="79.16"/>
+      <text class="cls-2" transform="translate(30.21 108.51) scale(1.18 1.05)"><tspan x="0" y="0">P</tspan></text>
+      <text class="cls-2" transform="translate(80.18 108.51) scale(1.18 1.05)"><tspan x="0" y="0">K</tspan></text>
+    </g>
+  </g>
+</svg>

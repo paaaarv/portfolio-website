@@ -12,23 +12,23 @@ const BookList = () => {
   }, []);
 
   return (
-    <div className="bg-[var(--brown)] w-80 rounded-box">
-   <div className="carousel rounded-box w-64">
+    <ul className="list rounded-box shadow-md">
+      <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">Recently Read: </li>
       {books.map((userBook, index) => {
         const book = userBook.book;
+        console.log(book);
         return (
-          <div key={index} id={index} className="carousel-item relative w-fullg" >
-            <div className="mx-2 my-4 text-[var(--cream)]">
-              <img className=" my-2 mx-auto h-[400px] rounded-box" src={book.image.url} alt={book.title} />
-              <div className="text-lg font-bold  opacity-100">{book.title}</div>
-              <div className="text-sm font-thin">{book.contributions[0].author.name}</div>
+          <li key={index} id={index} className="list-row">
+            <div><img className="size-10 rounded-box" src={book.image.url}/></div>
+            <div>
+              <div>{book.title}</div>
+              <div className="text-xs uppercase font-semibold opacity-60">{book.contributions[0].author.name}</div>
             </div>
-          </div>
-        );
-      })}
-    </div>
-    </div>
-  );
+          </li>
+          )}
+        )}
+    </ul>
+  )
 };
 
 export default BookList;

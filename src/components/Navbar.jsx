@@ -1,4 +1,4 @@
-import Logo from '/PK-logo.png'; 
+import Logo from '../assets/logo.svg'; 
 import { useEffect } from "react"; 
 import { motion } from 'framer-motion'; 
 import { Link } from 'react-router-dom'; 

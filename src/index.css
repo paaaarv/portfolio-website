@@ -7,17 +7,17 @@
 /* global styles */ 
 /*CHANGE COLORS THEYRE TERRIBLE*/ 
 :root{
-    --cream: #F6F1E3; 
-    --mustard: #D9910D; 
+    --teal: #542e27;
+    --cream: #f5e9e4;
+    --mustard: #d4b7b2; 
     --terra: #C35645; 
     --olive: #a2ac88; 
     --brown: #8B4513; 
     --blush: #F3C6B5; 
-    --teal: #1e6d6d; 
-    font-family: "Open Sans", Avenir, Helvetica, Arial, sans-serif;
+    font-family: proxima-nova, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    font-weight: 400;
-    background-color: #f6f1e3;
+    font-weight: 100;
+    background-color: var(--cream);
     color: var(--teal); 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -27,7 +27,7 @@
 
 a {
   font-weight: 500;
-  color: var(--terra); 
+  color: var(--teal); 
   text-decoration: inherit;
 }
 a:hover {
@@ -52,7 +52,8 @@ body {
 h1 {
   font-size: 3em;
   line-height: 1.5;
-  font-family: "Caprasimo",serif; 
+  font-family: proxima-nova ,serif; 
+  font-weight: 700; 
   color: var(--mustard); 
 }
 
