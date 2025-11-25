@@ -4,9 +4,9 @@ import BookList from '../components/BookList';
 export default function About(){
     return(
         <div id="about">
+            <h1 className="text-2xl font-bold">About Parvathi</h1>
                 <div className=" hero-content flex-col md:flex-row px-35">
                     <div className="md:w-1/2 text-left">
-                    <h2 className="text-2xl font-bold">About Parvathi</h2>
                     <img
                     src={AboutImg}
                     className="w-3/4 rounded-lg"
@@ -20,17 +20,16 @@ export default function About(){
 
             <div id="bio-container">
                 <p className="py-6">
-                    My story as a developer is rooted in curiosity and a genuine desire to make technology feel effortless and accessible. What initially sparked my interest in code was the way it reminded me of  
-                    the puzzles I love cracking in my spare time,  The NYT Crossword, Sudoku, Connections, Wordle etc. 
+                    My story as a developer is rooted in curiosity. What initially sparked my interest in code was the way it reminded me of  
+                    the puzzles I've always loved solving - word searches, unscrambles, sudoku, most recently crosswords (solved up to Saturday's puzzle one time with no hints, extremely proud of it). 
                 </p>
                 <p className="py-6">
-                    What makes my work special is not just my proficiency with React or Java, 
-                    but also a genuine desire to solve problems that matter. I believe technology should serve people first, which drives me to pay close attention to user experience and collaboration. 
-                    I've always enjoyed connecting with others, sharing ideas, and building solutions that make a difference.
+                    However, unlike the puzzles I grew up with, coding allowed me an opportunity to scratch that same itch, that same unrelenting desire to find the solution, with problems that had more than "one right answer". 
+                    The leaps and bounds in creative problem-solving when it comes to development makes it feel like exactly the path I'm meant to be on. 
                 </p>
                 <p className="py-6">
                     Throughout my years of hands-on experience, I've moved between modernizing legacy systems and crafting sleek, scalable applications, always with an eye on clarity and function. 
-                    For me, development isn't just a job. It's a continuous journey of growth, creativity, and meaningful impact.
+                    I'm looking forward to a continuous journey of growth, creativity, and meaningful impact.
                 </p>
             </div>
         </div>
