@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'; 
 import Hero from '../components/Hero'; 
+import Contact from '../components/Contact';
 
 export default function Home(){
     return(
@@ -9,6 +10,8 @@ export default function Home(){
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
         <Hero/>
+        <Contact/>
       </motion.div>
+
     )
 }
