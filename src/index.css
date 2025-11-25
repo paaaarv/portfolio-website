@@ -87,11 +87,20 @@ button:focus-visible {
   flex-direction: row; 
   align-items: center;
 }
+#about-header{
+  max-width: 50%; 
+}
+#skills-section{
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 4px; 
+}
 
 #bio-container{
   width: 100%; 
   text-align: justify;
-  background-color: var(--olive); 
+  background-color: var(--mustard); 
+  color: var(--teal);
 }
 #bio-container p {
   min-width: 300px; 

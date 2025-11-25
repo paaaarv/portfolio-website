@@ -4,21 +4,30 @@ import BookList from '../components/BookList';
 export default function About(){
     return(
         <div id="about">
-            <h1 className="text-2xl font-bold">About Parvathi</h1>
-                <div className=" hero-content flex-col md:flex-row px-35">
+                <div className=" hero-content flex-col md:flex-row px-35 items-start">
+                    <div id="about-header" className="justify-end">
+                        <h1 className="text-left mb-2">About Parvathi</h1>
+                        <div id="skills-section">
+                        <div className="badge badge-lg badge-outline bg-[var(--mustard)] font-semibold">JavaScript</div>
+                        <div className="badge badge-lg  badge-outline bg-[var(--mustard)] font-semibold">React</div>
+                        <div className="badge badge-lg  badge-outline bg-[var(--mustard)] font-semibold">Angular</div>
+                        <div className="badge badge-lg  badge-outline bg-[var(--mustard)] font-semibold">Java</div>
+                        <div className="badge badge-lg  badge-outline bg-[var(--mustard)] font-semibold">Python</div>
+                        <div className="badge badge-lg badge-outline bg-[var(--mustard)] font-semibold">HTML/CSS</div>
+                        <div className="badge badge-lg badge-outline bg-[var(--mustard)] font-semibold">GIT</div>
+                        <div className="badge badge-lg badge-outline bg-[var(--mustard)] font-semibold">SQL</div>
+                        </div>
+                    </div>
                     <div className="md:w-1/2 text-left">
                     <img
                     src={AboutImg}
-                    className="w-3/4 rounded-lg"
+                    className="w-1/2 rounded-lg"
                     alt="A picture of Parvathi sitting on the beach in Chicago with the skyline in the background"
                     />
                     </div>
-                     <div>
-                        <BookList/> 
-                    </div>
                 </div>
 
-            <div id="bio-container">
+            <div id="bio-container" className="py-6">
                 <p className="py-6">
                     My story as a developer is rooted in curiosity. What initially sparked my interest in code was the way it reminded me of  
                     the puzzles I've always loved solving - word searches, unscrambles, sudoku, most recently crosswords (solved up to Saturday's puzzle one time with no hints, extremely proud of it). 
@@ -32,6 +41,9 @@ export default function About(){
                     I'm looking forward to a continuous journey of growth, creativity, and meaningful impact.
                 </p>
             </div>
+              <div>
+                <BookList/> 
+                </div>
         </div>
     )
 }
