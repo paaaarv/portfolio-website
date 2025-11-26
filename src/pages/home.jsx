@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'; 
 import Hero from '../components/Hero'; 
 import Contact from '../components/Contact';
+import ProjectCard from '../components/ProjectCard'; 
 
 export default function Home(){
     return(
@@ -10,6 +11,7 @@ export default function Home(){
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
         <Hero/>
+        <ProjectCard/>
         <Contact/>
       </motion.div>
 

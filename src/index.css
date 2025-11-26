@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -10,15 +10,15 @@
     --teal: #542e27;
     --cream: #f5e9e4;
     --mustard: #d4b7b2; 
-    --terra: #C35645; 
-    --olive: #a2ac88; 
-    --brown: #8B4513; 
-    --blush: #F3C6B5; 
+    --terra: #7F564F; 
+    --olive: #A98B86; 
+    --brown: #33140F; 
+    --neon:#ade47c; 
     font-family: proxima-nova, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    font-weight: 100;
+    font-weight: 400;
     background-color: var(--cream);
-    color: var(--teal); 
+    color: var(--brown); 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -26,12 +26,20 @@
 }
 
 a {
-  font-weight: 500;
-  color: var(--teal); 
+  font-weight: 700;
+  color: var(--brown); 
   text-decoration: inherit;
 }
 a:hover {
+  background-color: var(--brown); 
   color: var(--mustard); 
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+  transition: 0.3s ease-in; 
+}
+p{
+  font-family: "Montserrat", sans-serif; 
+  font-weight: 300; 
+  font-size: 0.9em;
 }
 
 .logo-img{
@@ -41,20 +49,22 @@ a:hover {
 .headshot-img{
   border-top-left-radius: 175px;
   border-top-right-radius: 175px; 
-  border: 5px solid var(--teal); 
+  border: 2px solid var(--teal); 
 }
 body {
-  margin: 0;
+  min-width: 350px; 
+  max-width: 1200px; 
+  margin: 0 auto;
   display: flex;
   place-items: center;
 }
 
 h1 {
-  font-size: 3em;
-  line-height: 1.5;
-  font-family: proxima-nova ,serif; 
-  font-weight: 700; 
-  color: var(--mustard); 
+  font-size: 2.5em;
+  line-height: 1.2em;
+  font-family: proxima-nova,serif; 
+  font-weight: 100; 
+  color: var(--teal); 
 }
 
 h2{
@@ -64,17 +74,15 @@ h2{
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.3em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--mustard); 
+  background-color: transparent; 
   cursor: pointer;
-  transition: border-color 0.25s;
+  box-shadow: none;
 }
-button:hover {
-  border-color: var(--olive); 
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto var(--cream);
@@ -87,27 +95,56 @@ button:focus-visible {
   flex-direction: row; 
   align-items: center;
 }
+#projects-div{
+  display: flex; 
+  background-color: var(--olive); 
+  padding: 2em; 
+}
+#modal-body{
+  display: flex; 
+}
+#case-study-body{
+  overflow:scroll; 
+  max-height: 40vh; 
+}
 #about-header{
   max-width: 50%; 
 }
 #skills-section{
   display: flex; 
   flex-wrap: wrap; 
-  gap: 4px; 
+  gap: 8px;
+  justify-content: start;
 }
-
+.badge{
+  background-color: var(--terra); 
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5); 
+  border: none;
+  color: var(--mustard); 
+  font-family: "Montserrat", sans-serif; 
+}
 #bio-container{
   width: 100%; 
   text-align: justify;
-  background-color: var(--mustard); 
-  color: var(--teal);
+  background-color: var(--brown); 
+  color: var(--mustard);
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 1em; 
 }
-#bio-container p {
+#bio-container h2{
+  padding-left: 1em;
+  color: var(--mustard); 
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+#about-content-div {
   min-width: 300px; 
-  max-width: 560px;
-  align-self: center;
-  margin: auto; 
+  max-width: 500px;
 } 
+
 
 #resume-container{
   width: 100%;
@@ -116,15 +153,7 @@ button:focus-visible {
 #resume li {
   font-size: .9em; 
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+@media screen and (min-width: 864px){
+
 }

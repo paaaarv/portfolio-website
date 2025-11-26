@@ -14,7 +14,6 @@ export default function Hero(){
                             Creating intuitive, scalable web experiences and turning complex ideas into elegant, user-friendly solutions. I thrive on bringing creative ideas to life through thoughtful code and collaboration. <br/> <br/>
                             Let's build something remarkable together.
                         </p>
-                        <ProjectCard/>
                     </div>
             </div>
         </div>
