@@ -27,6 +27,7 @@
 
 a {
   font-weight: 700;
+  font-size: 1.2em; 
   color: var(--brown); 
   text-decoration: inherit;
 }
@@ -39,11 +40,11 @@ a:hover {
 p{
   font-family: "Montserrat", sans-serif; 
   font-weight: 300; 
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .logo-img{
-  width: 50px;
+  width: 3em;
 }
 
 .headshot-img{
@@ -115,7 +116,7 @@ button:focus-visible {
   flex-direction: column; 
   scrollbar-color: var(--terra); 
   overflow-y:scroll; 
-  max-height: 60vh; 
+  max-height: 70vh; 
   padding: 1.5em;
 }
 #modal-body img {
