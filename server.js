@@ -3,6 +3,7 @@ import express from "express";
 import fetch from "node-fetch";
 import dotenv from 'dotenv';
 
+
 const app = express();
 const PORT = 3000;
 
@@ -10,7 +11,7 @@ const PORT = 3000;
 dotenv.config();
 // eslint-disable-next-line no-undef
 const apiKey = process.env.BLOG_API_KEY;
-console.log('Loaded API Key:', apiKey);
+console.log('Loaded API Key:');
 
 app.get("/api/devto-articles", async (req, res) => {
   try {
@@ -18,7 +19,8 @@ app.get("/api/devto-articles", async (req, res) => {
       headers: { "api-key": apiKey }
     });
     const data = await response.json();
-    res.json(data);
+    const formattedData = formatData(data); 
+    res.json(formattedData);
   } catch (error) {
     res.status(500).json({ error: "API call failed", details: error.message });
   }
@@ -27,3 +29,12 @@ app.get("/api/devto-articles", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+const formatData = (data) => {
+  return (data.map((post) => ({
+    title: post.title, 
+    cover_image: post.cover_image, 
+    body: post.body_markdown
+  })
+))
+}

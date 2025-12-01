@@ -94,18 +94,34 @@ button:focus-visible {
   justify-content: space-between;
   flex-direction: row; 
   align-items: center;
+  text-wrap: pretty; 
 }
 #projects-div{
   display: flex; 
   background-color: var(--olive); 
   padding: 2em; 
 }
+.modal{
+  text-wrap: pretty; 
+  text-align: left;
+}
+
+#modal-body p{
+  padding: 16px;
+  text-align: justify;
+}
 #modal-body{
   display: flex; 
+  flex-direction: column; 
+  scrollbar-color: var(--terra); 
+  overflow-y:scroll; 
+  max-height: 60vh; 
+  padding: 1.5em;
 }
-#case-study-body{
-  overflow:scroll; 
-  max-height: 40vh; 
+#modal-body img {
+  max-width: 350px; 
+  height: auto; 
+  margin: auto; 
 }
 #about-header{
   max-width: 50%; 
@@ -155,5 +171,4 @@ button:focus-visible {
 }
 
 @media screen and (min-width: 864px){
-
 }

@@ -1,7 +1,7 @@
-import sagaV from '/sagaV.png'
-import { fetchArticles } from '../api/blog'
-import { useState, useEffect } from 'react';
 
+import { fetchArticles } from '../api/blog'
+import React, { useState, useEffect } from 'react';
+import ReactMarkdown from "react-markdown";
 export default function ProjectCard(){
 
    const [projects, setProjects] = useState([]);
@@ -19,19 +19,16 @@ export default function ProjectCard(){
     return(
         <div>
             {(modalOpen && selectedProject) ? (  
-                <div key={selectedProject.id} id={selectedProject.title} className="modal modal-open">
-                    <div className="bg-[var(--cream)] modal-box py-10">
-                    <div className="flex">
-                        <div className="w-32 rounded">
-                            <img src={selectedProject.cover_image}/>
+                <dialog key={selectedProject.id} id={selectedProject.title} className="modal modal-open">
+                    <div className="bg-[var(--cream)] modal-box py-10 max-w-[50%]">
+                    <div className="flex py-3">
+                        <div> 
+                            <img className="w-25" src={selectedProject.cover_image} alt={selectedProject.title} /> 
                         </div>
-                        <h3 className="font-bold text-md">{selectedProject.title}</h3>
+                        <h3 className="font-bold text-xl mx-auto">{selectedProject.title}</h3>
                     </div>                        
                         <div id="modal-body">
-                            
-                            <div id="case-study-body">
-                                <p className="py-4">{selectedProject.body_markdown} </p>
-                            </div>
+                            <ReactMarkdown>{selectedProject.body}</ReactMarkdown>
                         </div>
                     </div>
                     <form method="dialog" className="modal-backdrop">
@@ -40,7 +37,7 @@ export default function ProjectCard(){
                             setSelectedProject(null)
                         }}>close</button>
                     </form>
-                </div>
+                </dialog>
             ) : null }
             <div id="projects-div">
                 {projects.map((project) => {
