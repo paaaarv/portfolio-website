@@ -14,7 +14,7 @@
     --terra: #7F564F; 
     --olive: #A98B86; 
     --brown: #33140F; 
-    --neon:#ade47c; 
+    --neon: #ade47c; 
     min-width: 390px; 
     max-width: 1290px; 
     margin: auto;
@@ -30,17 +30,17 @@
 }
 
 a {
-  margin-top: 20px;
   font-weight: 700;
-  font-size: 1.2em; 
+  font-size: 1.1em; 
   color: var(--brown); 
   text-decoration: inherit;
+  transition: 0.3s ease-in;
 }
 a:hover {
   background-color: var(--brown); 
   color: var(--mustard); 
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
-  transition: 0.3s ease-in; 
+  transition: 0.2s ease-in; 
 }
 p{
   font-family: "Montserrat", sans-serif; 
@@ -48,7 +48,7 @@ p{
 }
 
 .logo-img{
-  width: 2em;
+  width: 2.25em;
   height: auto; 
   transition: 0.3s ease-in;
 }
@@ -106,7 +106,7 @@ button:focus-visible {
   outline: 4px auto var(--cream);
 }
 
-#projects-div{
+#projects{
   background-color: var(--olive); 
   padding: 1em 2.5em; 
 }
@@ -183,8 +183,27 @@ button:focus-visible {
   min-width: 300px; 
   max-width: 500px;
 } 
+#contact-div{
+  color: var(--brown); 
+}
 
+#contact-div input{
+  width: 60%;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: var(--brown);
+}
+#contact-div input:focus{
+  outline: none;
+}
+#contact-button{
+  background-color: var(--teal); 
+  padding: .75em;
+  color: var(--cream);
+  font-weight: bold;
+  font-size: 14px;
 
+}
 #resume-container{
   width: 100%;
 }
@@ -199,8 +218,11 @@ button:focus-visible {
   }
 
   .logo-img{
-    width: 3em; 
+    width: 2.5em; 
     height: auto;
+  }
+  nav a{
+    font-size: 1.25em; 
   }
 
 }

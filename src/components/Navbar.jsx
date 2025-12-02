@@ -24,10 +24,11 @@ export default function Navbar() {
                 <img className="logo-img" src={Logo} alt="Parvathi Kumar logo"></img>
             </a>
         </div>
-        <div className="flex-one justify-between">
+        <div className="flex-one">
             <ul className="menu uppercase menu-horizontal px-1">
-            <li><a href="#" className="link link-hover">Home</a></li>
-            <li><a href="#about" className="link link-hover">About</a></li>
+            <li><a href="#projects" className="link link-hover">Projects</a></li>
+            <li><a href="#about" className="link link-hover">Bio</a></li>
+            <li><a href="#contact" className="link link-hover">Contact</a></li>
             </ul>
         </div>
     </div>

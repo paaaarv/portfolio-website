@@ -42,7 +42,7 @@ export default function ProjectCard(){
                     </form>
                 </dialog>
             ) : null }
-            <div className="h-[70vh] items-center" id="projects-div">
+            <div className="h-[70vh] items-center" id="projects">
                 <h2 className="text-left">Projects</h2>
                 <div className="flex mt-20">
                 {projects.map((project) => {
