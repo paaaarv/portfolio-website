@@ -14,6 +14,9 @@
     --olive: #A98B86; 
     --brown: #33140F; 
     --neon:#ade47c; 
+    min-width: 390px; 
+    max-width: 1290px; 
+    margin: auto;
     font-family: proxima-nova, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
@@ -40,7 +43,6 @@ a:hover {
 p{
   font-family: "Montserrat", sans-serif; 
   font-weight: 300; 
-  font-size: 1em;
 }
 
 .logo-img{
@@ -61,10 +63,10 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
   line-height: 1.2em;
   font-family: proxima-nova,serif; 
   font-weight: 100; 
+  font-size: 2.25em;
   color: var(--teal); 
 }
 
@@ -171,5 +173,9 @@ button:focus-visible {
   font-size: .9em; 
 }
 
-@media screen and (min-width: 864px){
+@media screen and (min-width: 776px){
+  h1{
+    font-size:3.5em; 
+  }
+
 }

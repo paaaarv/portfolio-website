@@ -20,14 +20,14 @@ export default function Navbar() {
     >
     <div className="navbar justify-between">
         <div className="flex-none">
-            <Link to="/">
+            <a href="#">
                 <img className="logo-img" src={Logo} alt="Parvathi Kumar logo"></img>
-            </Link>
+            </a>
         </div>
         <div className="flex-one justify-between">
             <ul className="menu uppercase menu-horizontal px-1">
-            <li><Link to="/" className="link link-hover">Home</Link></li>
-            <li><Link to="/about" className="link link-hover">About</Link></li>
+            <li><a href="#" className="link link-hover">Home</a></li>
+            <li><a href="#about" className="link link-hover">About</a></li>
             </ul>
         </div>
     </div>
