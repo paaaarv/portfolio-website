@@ -2,15 +2,15 @@ import Headshot from '/headshot.jpg'
 import ProjectCard from './ProjectCard'
 export default function Hero(){
     return(
-        <div className="hero h-[80vh]">
-            <div className="hero-content items-start flex-row">
+        <div className="hero h-[50vh] md:h-[90vh] items-start">
+            <div className="hero-content flex-row items-center md:items-start mt-10">
                   <img
                 src={Headshot} 
-                className="w-1/2 md:w-1/5 mx-3 headshot-img"
+                className="w-1/3 lg:w-1/5 headshot-img"
                 />
-                    <div className="md:w-1/2 text-left mx-5 ">
+                    <div className="md:w-1/2 text-left mx-2 ">
                         <h1>Parvathi Kumar</h1>
-                        <p id="tagline" className="text-xs md:text-base py-3">
+                        <p id="tagline" className="text-xs md:text-base py-2">
                             Creating intuitive, scalable web experiences and turning complex ideas into elegant, user-friendly solutions. I thrive on bringing creative ideas to life through thoughtful code and collaboration. <br/> <br/>
                             Let's build something remarkable together.
                         </p>

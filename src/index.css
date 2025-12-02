@@ -7,6 +7,7 @@
 /* global styles */ 
 /*CHANGE COLORS THEYRE TERRIBLE*/ 
 :root{
+    
     --teal: #542e27;
     --cream: #f5e9e4;
     --mustard: #d4b7b2; 
@@ -46,7 +47,9 @@ p{
 }
 
 .logo-img{
-  width: 3em;
+  width: 2em;
+  height: auto; 
+  transition: 0.7s ease-in;
 }
 
 .headshot-img{
@@ -66,7 +69,7 @@ h1 {
   line-height: 1.2em;
   font-family: proxima-nova,serif; 
   font-weight: 100; 
-  font-size: 2.25em;
+  font-size: 2em;
   color: var(--teal); 
 }
 
@@ -173,9 +176,14 @@ button:focus-visible {
   font-size: .9em; 
 }
 
-@media screen and (min-width: 776px){
+@media screen and (min-width: 764px){
   h1{
     font-size:3.5em; 
+  }
+
+  .logo-img{
+    width: 3em; 
+    height: auto;
   }
 
 }

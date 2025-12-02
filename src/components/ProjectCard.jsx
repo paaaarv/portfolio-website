@@ -20,10 +20,10 @@ export default function ProjectCard(){
         <div>
             {(modalOpen && selectedProject) ? (  
                 <dialog key={selectedProject.id} id={selectedProject.title} className="modal modal-open">
-                    <div className="bg-[var(--cream)] modal-box py-10 max-w-[50%]">
+                    <div className="bg-[var(--teal)] modal-box py-10 max-w-[50%]">
                     <div className="flex py-3 items-center">
-                        <div> 
-                            <img className="w-25" src={selectedProject.cover_image} alt={selectedProject.title} /> 
+                        <div className="avatar"> 
+                            <img className="w-25 rounded" src={selectedProject.cover_image} alt={selectedProject.title} /> 
                         </div>
                         <h3 className="font-bold text-xl mx-auto">{selectedProject.title}</h3>
                     </div>                        
@@ -44,7 +44,7 @@ export default function ProjectCard(){
                     console.log(project);
                 return (
                 <div key={project.id} className="card card-sm py-1 mx-3 w-72 h-100 bg-[var(--cream)] shadow-xl">
-                    <figure>
+                    <figure class="avatar">
                         <img
                         className="h-full w-auto"
                         src={project.cover_image} 
