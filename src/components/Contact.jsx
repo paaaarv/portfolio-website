@@ -14,19 +14,19 @@ export default function Contact() {
     const [visitorMessage, setVisitorMessage] = useState(''); 
     const [submitMessage, setSubmitMessage] = useState(false); 
 
-    const submitContactForm = (e) => {
-         e.preventDefault();
-        fetch("/", {
-            method: "POST", 
-            headers: { "Content-Type": "application/x-www-form-urlencoded" }, 
-            body: encode({ "form-name": "contact-form", "Name": visitorName, "Email": visitorEmail, "Message": visitorMessage})
-        })
-            .then(() => setSubmitMessage(true))
-            .catch(error => alert(error)); 
-            setVisitorEmail(''); 
-            setVisitorName(''); 
-            setVisitorMessage(''); 
-    }
+    // const submitContactForm = (e) => {
+    //      e.preventDefault();
+    //     fetch("/", {
+    //         method: "POST", 
+    //         headers: { "Content-Type": "application/x-www-form-urlencoded" }, 
+    //         body: encode({ "form-name": "contact-form", "Name": visitorName, "Email": visitorEmail, "Message": visitorMessage})
+    //     })
+    //         .then(() => setSubmitMessage(true))
+    //         .catch(error => alert(error)); 
+    //         setVisitorEmail(''); 
+    //         setVisitorName(''); 
+    //         setVisitorMessage(''); 
+    // }
     return(
         <div className="text-left m-10">
             <h2>Contact</h2>
@@ -34,7 +34,7 @@ export default function Contact() {
                 <pre data-prefix="$" className="text-[var(--cream)]"><code>// want to collaborate?</code></pre>
                 <pre data-prefix="$" className="text-[var(--cream)]"><code>// connect with me!</code></pre>
                 <br/>
-                <form name="contact-form" data-netlify="true" onSubmit={(e) => submitContactForm(e)}>
+                <form name="contact-form" netlify>
                     <pre data-prefix=">" className="text-[var(--cream)]"><code>your name:  </code>
                      <input value={visitorName} onChange={(e) => setVisitorName(e.target.value)} type="text" autofocus ></input></pre>
                      <pre data-prefix=">" className="text-[var(--cream)]"><code>your email:  </code>
