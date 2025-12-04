@@ -34,13 +34,13 @@ export default function Contact() {
                 <pre data-prefix="$" className="text-[var(--cream)]"><code>// want to collaborate?</code></pre>
                 <pre data-prefix="$" className="text-[var(--cream)]"><code>// connect with me!</code></pre>
                 <br/>
-                <form name="contact-form" netlify>
+                <form name="contact-form" method="POST" netlify>
                     <pre data-prefix=">" className="text-[var(--cream)]"><code>your name:  </code>
-                     <input value={visitorName} onChange={(e) => setVisitorName(e.target.value)} type="text" autofocus ></input></pre>
+                     <input name="name" value={visitorName} onChange={(e) => setVisitorName(e.target.value)} type="text" autofocus ></input></pre>
                      <pre data-prefix=">" className="text-[var(--cream)]"><code>your email:  </code>
-                    <input type="email" value={visitorEmail} onChange={(e) => setVisitorEmail(e.target.value)}></input></pre>
+                    <input name="email" type="email" value={visitorEmail} onChange={(e) => setVisitorEmail(e.target.value)}></input></pre>
                     <pre data-prefix=">" className="text-[var(--cream)]"><code>message:  </code>
-                    <input type="text"value={visitorMessage} onChange={(e) => setVisitorMessage(e.target.value)}></input></pre>
+                    <input name="message" type="text"value={visitorMessage} onChange={(e) => setVisitorMessage(e.target.value)}></input></pre>
                     <pre className="flex justify-between my-5"><code><button id="contact-button" type="submit">sendMessage()</button></code></pre>
                 {submitMessage && 
                     <pre data-prefix="$" className="bg-success"><code>SUCCESS: message received </code></pre>
