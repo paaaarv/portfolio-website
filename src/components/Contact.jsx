@@ -43,7 +43,7 @@ export default function Contact() {
                     <input name="email" type="email" value={visitorEmail} onChange={(e) => setVisitorEmail(e.target.value)}></input></pre>
                     <pre data-prefix=">" className="text-[var(--cream)]"><code>message:  </code>
                     <input name="message" type="text"value={visitorMessage} onChange={(e) => setVisitorMessage(e.target.value)}></input></pre>
-                    <pre className="flex justify-between my-5"><code><button id="contact-button" type="submit" onClick={(e) => handleClick(e)}>sendMessage()</button></code></pre>
+                    <pre className="flex justify-between my-5"><code><button id="contact-button" type="submit"> sendMessage()</button></code></pre>
                 {submitMessage && 
                     <pre data-prefix="$" className="bg-success"><code>SUCCESS: message received </code></pre>
                 }
