@@ -35,7 +35,7 @@ export default function Contact() {
                 <pre data-prefix="$" className="text-[var(--cream)]"><code>// want to collaborate?</code></pre>
                 <pre data-prefix="$" className="text-[var(--cream)]"><code>// connect with me!</code></pre>
                 <br/>
-                <form name="contact-form" method="POST" data-netlify="true">
+                <form name="contact-form" method="POST" action="/" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact-form" />
                     <pre data-prefix=">" className="text-[var(--cream)]"><code>your name:  </code>
                      <input name="name" value={visitorName} onChange={(e) => setVisitorName(e.target.value)} type="text" autofocus ></input></pre>
