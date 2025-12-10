@@ -1,6 +1,4 @@
-const apiKey = import.meta.env.BLOG_API_KEY;
-console.log('Loaded API Key:');
-
+const apiKey = import.meta.env.VITE_BLOG_API_KEY; 
 
 export const fetchArticles = async (res, req) => {
   try {
