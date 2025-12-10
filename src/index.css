@@ -165,11 +165,13 @@ button:focus-visible {
   color: var(--mustard); 
   font-family: "Montserrat", sans-serif; 
 }
+#about{
+    background-color: var(--brown); 
+    color: var(--mustard);
+}
 #bio-container{
   width: 100%; 
   text-align: justify;
-  background-color: var(--brown); 
-  color: var(--mustard);
   display: flex; 
   flex-wrap: wrap;
   justify-content: space-evenly;
