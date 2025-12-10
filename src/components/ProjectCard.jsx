@@ -1,5 +1,5 @@
 
-import { fetchArticles } from '../api/blog'
+import { fetchArticles } from '../../functions/server.js'
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from "react-markdown";
 export default function ProjectCard(){
