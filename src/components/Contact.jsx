@@ -23,7 +23,7 @@ export default function Contact() {
                 <form name="contact-form" method="POST" action="/" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact-form" />
                     <pre data-prefix=">" className="text-[var(--cream)]"><label for="name"></label><code>your name:  </code>
-                     <input name="name" value={visitorName} onChange={(e) => setVisitorName(e.target.value)} type="text" autoFocus ></input></pre>
+                     <input name="name" value={visitorName} onChange={(e) => setVisitorName(e.target.value)} type="text"></input></pre>
                      <pre data-prefix=">" className="text-[var(--cream)]"><label for="name"></label><code>your email:  </code>
                     <input name="email" type="email" value={visitorEmail} onChange={(e) => setVisitorEmail(e.target.value)}></input></pre>
                     <pre data-prefix=">" className="text-[var(--cream)]"><label for="name"></label> <code>message:  </code>
