@@ -1,6 +1,7 @@
 
 import { fetchArticles } from '../api/blog.js';
 import React, { useState, useEffect } from 'react';
+import arrow from '/arrow-circle-right.svg';
 import ReactMarkdown from "react-markdown";
 export default function ProjectCard(){
 
@@ -63,7 +64,7 @@ export default function ProjectCard(){
                                 setSelectedProject(project);
                                 setModalOpen(true)
                                 }}>
-                                <img src="src/assets/arrow-circle-right.svg" alt="right arrow image" /> 
+                                <img src={arrow} alt="right arrow image" /> 
                             </button>
                         </div>
                     );
