@@ -2,7 +2,7 @@ import Headshot from '/headshot.jpg'
 import ProjectCard from './ProjectCard'
 export default function Hero(){
     return(
-        <div className="hero h-[50vh] md:h-[80vh] items-start">
+        <div className="hero h-[70vh] md:h-[80vh] items-start">
             <div className="hero-content flex-row items-center mt-10">
                   <img
                 src={Headshot} 
