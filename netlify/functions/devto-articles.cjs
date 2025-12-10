@@ -1,22 +1,21 @@
 // netlify/functions/devto-articles.cjs
-const apiKey = process.env.BLOG_API_KEY;
+const apiKey = process.env.VITE_BLOG_API_KEY;
 
 exports.handler = async () => {
   try {
-    const response = await fetch("https://dev.to/api/articles/me", {
+    const response = await fetch("https://dev.to/api/articles/me/all", {
       headers: { "api-key": apiKey },
     });
     
     if (!response.ok) {
       return {
         statusCode: response.status,
-        body: JSON.stringify({ error: "Dev.to API failed" }),
+        body: JSON.stringify({ error: "Dev.to API failed", response: response.status }),
         headers: { "Content-Type": "application/json" },
       };
     }
     
-    const data = await response.json(); // Parse dev.to JSON
-    console.log("dev.to data:", data);
+    const data = await response.json(); 
     
     const formattedData = data.map((post) => ({
       title: post.title,
@@ -30,7 +29,7 @@ exports.handler = async () => {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       },
-      body: JSON.stringify(formattedData), // Stringify for Netlify
+      body: JSON.stringify(formattedData),
     };
   } catch (error) {
     console.error("Function error:", error);
