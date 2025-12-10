@@ -134,8 +134,9 @@ button:focus-visible {
   text-align: left;
 }
 .modal-container{
-  text-wrap: nowrap;
+  text-wrap: pretty;
 }
+
 #modal-body{
   display: flex; 
   flex-direction: column; 
@@ -196,15 +197,15 @@ button:focus-visible {
   width: 60%;
   line-height: 1.5em;
   font-size: 16px;
-  color: var(--brown);
+  color: var(--mustard);
 }
 #contact-div input:focus{
   outline: none;
 }
 #contact-button{
-  background-color: var(--teal); 
+  background-color: var(--mustard); 
   padding: .75em;
-  color: var(--cream);
+  color: var(--teal);
   font-weight: bold;
   font-size: 14px;
 

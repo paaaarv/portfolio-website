@@ -35,7 +35,7 @@ export default function ProjectCard(){
                         </div>
                     </div>
                     <form method="dialog" className="modal-backdrop">
-                        <button onClick={() => {
+                        <button name="close-dialog" onClick={() => {
                             setModalOpen(false)
                             setSelectedProject(null)
                         }}>close</button>
@@ -47,25 +47,24 @@ export default function ProjectCard(){
                 <h2 className="text-left">Projects</h2>
                 <div className="flex flex-wrap mt-20 gap-4 justify-center">
                     {projects.map((project) => {
-                        console.log(project);
                     return (
-                    <div key={project.id} className="card card-sm w-96 md:w-72 h-auto bg-[var(--cream)] shadow-xl project-container">
-                        <figure className="avatar my-5">
-                            <img
-                            className="w-3/4"
-                            src={project.cover_image} 
-                            alt={project.title}
-                            />
-                        </figure>
-                        <div className="project-card-info card-body">
-                            <h3 className="text-left inline-flex card-title">{project.title} </h3>    
-                        </div>
-                        <button className="w-1/6 self-end btn" onClick={() => {
-                            setSelectedProject(project);
-                            setModalOpen(true)
-                            }}>
-                            <img src="src/assets/arrow-circle-right.svg" /> 
-                        </button>
+                        <div key={project.id} className="card card-sm w-96 md:w-72 h-auto bg-[var(--cream)] shadow-xl project-container">
+                            <figure className="avatar my-5">
+                                <img
+                                className="w-3/4"
+                                src={project.cover_image} 
+                                alt={project.title}
+                                />
+                            </figure>
+                            <div className="project-card-info card-body">
+                                <h3 className="text-left inline-flex card-title">{project.title} </h3>    
+                            </div>
+                            <button name="see-more-button" className="w-1/6 self-end btn" onClick={() => {
+                                setSelectedProject(project);
+                                setModalOpen(true)
+                                }}>
+                                <img src="src/assets/arrow-circle-right.svg" alt="right arrow image" /> 
+                            </button>
                         </div>
                     );
                     })}

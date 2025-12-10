@@ -7,6 +7,7 @@ export default function Hero(){
                   <img
                 src={Headshot} 
                 className="w-1/3 max-w-[300px] headshot-img"
+                alt="Headshot of Parvathi in a black top and orange cardigan."
                 />
                     <div className="md:w-1/2 text-left mx-3 ">
                         <h1 className="sm:text-lg">Parvathi Kumar</h1>

@@ -18,6 +18,7 @@ exports.handler = async () => {
     const data = await response.json(); 
     
     const formattedData = data.map((post) => ({
+      id: post.id,
       title: post.title,
       cover_image: post.cover_image,
       body: post.body_markdown,
